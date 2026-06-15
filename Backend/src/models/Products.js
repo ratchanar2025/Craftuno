@@ -1,0 +1,11 @@
+{
+ vendorId,
+ title,
+ description,
+ price,
+ images,
+ stock,
+ category,
+ customizable,
+ bulkAvailable
+}

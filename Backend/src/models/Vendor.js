@@ -1,0 +1,11 @@
+{
+ userId,
+ shopName,
+ description,
+ categories,
+ location,
+ whatsapp,
+ instagram,
+ youtube,
+ rating
+}

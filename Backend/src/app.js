@@ -10,6 +10,8 @@ const orderRoutes = require("./routes/orderRoutes");
 const communityRoutes = require("./routes/communityRoutes");
 const eventRoutes = require("./routes/eventRoutes");
 const customOrderRoutes = require("./routes/customOrderRoutes");
+const uploadRoutes = require("./routes/uploadRoutes");
+const messageRoutes = require("./routes/messageRoutes");
 
 const app = express();
 
@@ -24,6 +26,8 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/community", communityRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/custom-orders", customOrderRoutes);
+app.use("/api/upload", uploadRoutes);
+app.use("/api/messages", messageRoutes);
 
 app.get("/", (req, res) => {
   res.json({

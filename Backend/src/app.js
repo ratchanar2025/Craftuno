@@ -7,6 +7,9 @@ const cartRoutes = require("./routes/cartRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const orderRoutes = require("./routes/orderRoutes");
+const communityRoutes = require("./routes/communityRoutes");
+const eventRoutes = require("./routes/eventRoutes");
+const customOrderRoutes = require("./routes/customOrderRoutes");
 
 const app = express();
 
@@ -18,6 +21,9 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/payment", paymentRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/community", communityRoutes);
+app.use("/api/events", eventRoutes);
+app.use("/api/custom-orders", customOrderRoutes);
 
 app.get("/", (req, res) => {
   res.json({
